@@ -1,0 +1,115 @@
+Goals (determine the border of system and its communications):
+    - Is this data in our system or not
+    - How to communicate with other systems
+
+1) Context Diagram (Class Diagram): communications with other systems
+2) Subsystems (based on subject - Package diagram in UML)
+3) Classes of each subsystem
+  a) minimum inheritance, association, aggregation, composition
+  b) no analyze or design
+  c) just main properties (3 - 5), no methods
+  d) no interface
+  e) objects allowed to use
+
+
+Dependency: A is depend on B if each change in B cause a change in A
+
+OO relations:
+1) inheritance: is a kind/type of. Has dependency.
+2) aggregation, composition (physical/intrinsic): is a part of. Has dependency.
+  - composition: tight dependency
+3) association (logical/organizational)
+  a) Classes should be in same system
+  b) no Dependency
+  c) an existing relation that should be discovered
+  d) should exist organizational methods in both classes
+  e) two type of association:
+    1) have (no need to be written in diagram)
+    2) others (should be written in diagram)
+
+
+Example:
+
+system: Online Store
+
+1) Context Diagram (communications with other systems): Bank, Tax office, Transport, Insurance
+  - Bank
+    1) Transaction request
+    2) Transaction response
+  - Transport
+    1) Transport request
+    2) Good code
+
+2) Subsystems (ordered by dependency):
+  a) AAA
+  b) Basic good information
+  c) Warehousing
+  d) Buy
+  e) Sale
+  f) After-sale service / critics and suggestions
+
+3)
+  a) All classes
+  b) Main properties
+  c) Relations
+
+Example2:
+
+Classes list:
+A) Basic item information
+  1- class Item {
+    id,
+    name,
+    image,
+    price,
+    type
+  }
+  2- enum ItemType {
+    main,
+    dessert
+  }
+
+B) Admin
+  1- class Seat {
+    id,
+    name,
+    table
+  }
+  2- class Table {
+    id,
+    name,
+    seats
+  }
+  3- class Tab {
+    id,
+    name
+  }
+  4- class TakeAway {
+
+  }
+  5- enum Course {
+
+  }
+  6- class Configuration {
+
+  }
+
+C) Order
+  1- class Order {
+    id,
+    name,
+    serveItems,
+    checks,
+    tables,
+    Tabs,
+    TakeAways,
+    courses
+  }
+  2- class ServItems {
+    id,
+    item,
+    order,
+    check,
+    seat,
+    course
+  }

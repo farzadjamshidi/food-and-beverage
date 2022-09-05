@@ -1,0 +1,18 @@
+Software Requirements : All capabilities and functionalities that we want
+
+Standards -> Wishes -> Needs -> Software Requirements (Features)
+
+Requirement types:
+1) Functional -> Use Case Model(Dynamic) / Domain Model(Static)
+  a) code
+  b) name
+  c) note
+2) Non-functional -> Software Architecture
+  a) performance
+  b) availability
+  c) portability
+  d) security
+  e) extendibility
+  f) modifiability
+  g) reusability
+  h) usability

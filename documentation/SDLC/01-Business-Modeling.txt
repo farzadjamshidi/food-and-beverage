@@ -1,0 +1,35 @@
+1- Static -> business objects
+2- Dynamic -> business processes
+
+a) Write an introduction/summary
+b) Find organization goals
+c) Find organizational roles
+  - relations: inheritance or management(organizational chart)
+  - type: single user or multiple users
+  - write rules for each role
+d) Physical units/organizational units (if applicable)
+e) Business processes (a tree of processes)
+  - process : an ordered set of operations done by one or many roles
+  - documentation of a process:
+    1) code
+    2) name
+    3) explanation
+    4) event that trigger the process
+    5) process forms
+      - code
+      - name
+      - structure
+      - fields
+      - fields validations
+    6) resources : input/output
+    7) scenario : start, if/else, loops, ... , end
+        with swim lane
+        Activity Diagram (UML)
+          - starter
+          - roles
+          - swim lane
+          - errors
+          - validations
+          - what recources and what operations like insert, update, ...
+          - with maximum details
+f) Glossary: word -> meaning

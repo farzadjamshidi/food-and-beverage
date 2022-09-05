@@ -1,0 +1,94 @@
+1) stakeholders: all people that has a role in system
+  like, organization owners, managers, consultants, workers, end user, ...
+  Banks, government organs, ...
+  our company managers, software architect, project manager, analyst, designers, developers
+2) actors:
+  a) in software world
+  b) every (type)
+    1) end users
+    2) other software systems/other part of our software system
+    3) time
+  c) out of software system
+  d) Interact with software
+  e) has a request and software process its request
+
+Actors analyze: inheritance tree of actors
+
+3) use cases:
+  a) in software world
+  b) a finite ordered set of software actions
+  c) should be integrated (one part)
+  d) should have one or many actors
+  e) can be driven from behavior of actors
+  f) a business process can be one or many use cases
+  g) a use case can be actor of another use case
+  h) a use case should not be a method
+  i) extract use cases from:
+    1) processes
+    2) requirements
+    3) behavior of actors
+    4) classes of domain model (CRUD)
+    5) all reports
+    6) all forms
+
+categorize use cases based on complexity:
+  1) main
+  2) secondary
+    a) CRUDs
+    b) reports
+
+a complex use case:
+  1) many lines of code
+  2) complex algorithm and computation
+  3) unfamiliar use cases
+  4) complex forms
+  5) complex business behind the use case
+
+Documentation for use cases:
+  1) for all use cases:
+    a) code
+    b) a good name
+    c) description
+    d) forms with syntax validation
+    e) operations on domain classes (like CRUD)
+    f) actors
+  2) for main use cases
+    a) pre conditions
+    b) post conditions
+    c) use case scenario (Activity diagram)
+      1) actor/system diagram
+      2) basic flow, alternative flow, semantic validation diagram
+
+* user story in agile equivalent to user case but similar to process, means can have many use cases.
+
+* Size of a use case: number of alternative flows + number of CRUDs (7) + computation complexity
+
+* Importance of use case: Use case driven
+
+* Use case diagram with actors, sub systems and use cases with relations between them.
+
+Use case relations:
+  1) inheritance
+  2) extend
+  3) include
+
+
+UC01 : Login
+  - code: UC01
+  - name: Login
+UC02 : Logout
+UC03 : Show list of orders based on “All” and “My orders”
+UC04 : Create a new order – Table or Tab or Take away
+UC05 : Show menu items by category
+UC06 : Add menu item to order
+UC07 : Show added items in checks, seats and courses
+UC08 : Delete added item
+UC09 : Add note to added item
+UC10 : Add check
+UC11 : Delete check
+UC12 : Send order to kitchen
+UC13 : Change seats in table
+UC14 : Move added items between checks, seats and courses
+UC15 : Custom item
+UC16 : Discount
+UC17 : Tax include or tax exclude
